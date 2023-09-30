@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header style */
+.header {
+  background-color: white;
+  color: #c5ac48;
+  font-size: 2rem;
+  padding: 1.2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.content {
+  text-align: center;
+  padding: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 100%; /* Adjusted width to 100% for mobile */
+  max-width: 300px; /* Added max-width for larger screens */
+  border: 2px solid #327a81;
+  border-radius: 5px;
+  margin-bottom: 10px; /* Added margin between input and button */
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #2C3E50; /* Changed to a black-like color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 768px) {
+  .content {
+    padding: 10px;
+  }
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Adjust as needed */
+  padding: 20px;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Adjust the gap between images */
+}
+
+.image-item {
+  width: calc(33.33% - 20px); /* Adjust image width based on the number of images you want per row */
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Your existing CSS for image-container */
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%; /* Maximum width */
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* Your existing CSS for images */
+.image-container img {
+  width: 200px; /* Adjust the initial width of each image */
+  height: auto; /* Maintain aspect ratio */
+  margin: 10px; /* Adjust margin as needed */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .image-container img {
+    width: 100%; /* Make images take full width on smaller screens */
+  }
+}
